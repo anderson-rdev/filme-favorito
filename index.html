@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Estilo de Filme Favorito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Qual seu estilo de filme favorito?</h1>
+        
+        <div class="movie-list">
+            <h2>Escolha uma opção:</h2>
+            <ul>
+                <li><span class="number">1</span> - Ação</li>
+                <li><span class="number">2</span> - Comédia</li>
+                <li><span class="number">3</span> - Drama</li>
+                <li><span class="number">4</span> - Terror</li>
+                <li><span class="number">5</span> - Ficção Científica</li>
+                <li><span class="number">6</span> - Romance</li>
+            </ul>
+        </div>
+
+        <div class="input-section">
+            <label for="escolha">Digite o número da sua escolha (1-6):</label>
+            <input type="number" id="escolha" min="1" max="6" placeholder="Ex: 1">
+            <button onclick="selecionarEstilo()">Confirmar</button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
